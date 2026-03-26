@@ -1,4 +1,4 @@
-package com.marketplace.marketplace.entity;
+package com.marketplace.marketplace.entity.enums;
 
 public enum Role {
     ADMIN,

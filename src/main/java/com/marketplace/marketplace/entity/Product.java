@@ -1,12 +1,11 @@
 package com.marketplace.marketplace.entity;
 
+import com.marketplace.marketplace.entity.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-
 import java.math.BigDecimal;
 
 @Entity
