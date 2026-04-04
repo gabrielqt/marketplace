@@ -15,8 +15,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-@Configuration
-@EnableWebSecurity
+@Configuration // Essa anotacao diz: "Essa classe contém um Bean de configuração (para o Spring gerenciar)"
+@EnableWebSecurity // Essa anotacao permite que o desenvolver crie suas próprias regras de acesso (no filterChain)
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {

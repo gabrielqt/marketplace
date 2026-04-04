@@ -21,7 +21,6 @@ public class AuthController {
     private final AuthService authService;
 
     // POST /auth/login — rota pública, configurada no SecurityConfig
-    // REALIZAR TRATACAO DE ERRO!
     @PostMapping("/login")
     public ResponseEntity<TokenResponse> login(@Valid @RequestBody LoginRequest request) {
         return ResponseEntity.ok(authService.login(request));
